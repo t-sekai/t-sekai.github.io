@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Tse-kai (Kevin) Chan",
+    "name": "Tse-Kai (Kevin) Chan",
     "label": "Undergraduate Student",
     "image": "",
     "email": "tsekaichan@gmail.com",
@@ -25,6 +25,13 @@
   ],
   "publications": [
     {
+      "name": "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI",
+      "publisher": "Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin Liu, <b>Tse-kai Chan</b>, Yuan Gao, Xuanlin Li, Tongzhou Mu, Nan Xiao, Arnav Gurha, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, Hao Su",
+      "releaseDate": "2024",
+      "url": "https://arxiv.org/abs/2410.00425",
+      "summary": "arXiv preprint arXiv:2410.00425, 2024"
+    },
+    {
       "name": "RFCL: Reverse Forward Curriculum Learning for Extreme Sample and Demonstration Efficiency in RL",
       "publisher": "Stone Tao, Arth Shukla, <b>Tse-kai Chan</b>, Hao Su",
       "releaseDate": "2024",
@@ -39,11 +46,11 @@
       "url": "https://qi.ucsd.edu",
       "startDate": "2023-04",
       "endDate": "",
-      "summary": "Python, PyTorch, Unreal Engine, Kubernetes, Docker",
+      "summary": "Python, PyTorch, Unreal Engine, Kubernetes, Docker, C++",
       "highlights": [
-        "Co-developed interactive 3D avatars of historical figures in Unreal Engine 5, driven by large language models and text-to-speech/animation pipeline. Implemented a multi-speaker tracking module to drive a virtual avatar’s attention and face/body motion in multiplayer VR or through webcam using Google Mediapipe.",
-        "Developed a real-time audio-to-face pipeline that receives audio input from text-to-speech and uses NVIDIA Audio2Face through Rest API to animate facial movements on a 3D avatar.",
-        "Researching holistic multi-modal context co-speech gesture generation for animation and game engines."
+        "Co-developed interactive 3D avatars of historical figures in Unreal Engine 5, driven by large language models and text-to-speech/animation pipeline. Implemented a multi-speaker tracking module to drive a virtual avatar's attention and face/body motion in multiplayer VR or through webcam using Google Mediapipe.",
+        "Developed a real-time audio-to-face pipeline that receives audio input from text-to-speech and uses NVIDIA Audio2Face through Rest API to animate facial movements on a 3D avatar. Further researched and developed a multi-context co-speech gesture generation model for virtual avatar animation.",
+        "Developed an Unreal plugin for real-time speech gesture generation and player communication. The plugin supports seamless communication in multiplayer gameplay and between Unreal Engine and external AI models."
       ]
     },
     {
@@ -56,7 +63,8 @@
       "highlights": [
         "Researched demo-guided deep reinforcement learning methods to effectively solve long-horizon, sparse tasks.",
         "Benchmarked various state-of-the-art demonstration-guided deep RL methods, including RLPD, IQL, etc., on ManiSkill2, D4RL, and Meta-World tasks. Performed experiments on Kubernetes cluster using Docker.",
-        "Implementing RL baselines for the ManiSkill3 robotics environment."
+        "Adapted TD-MPC2 to Maniskill3 CPU/GPU vectorized environments and visual (rgb) based RL.",
+        "Researching ways to accelerate RL algorithms for better wall-time and sample efficiency in visual-based robotics environments."
       ]
     },
     {

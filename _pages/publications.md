@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: On this page, you will find papers I've published.
+description: On this page, you will find papers I've published and preprinted.
 nav: true
 nav_order: 2
 ---
