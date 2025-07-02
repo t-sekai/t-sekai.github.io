@@ -1,35 +1,47 @@
 {
   "basics": {
     "name": "Tse-Kai (Kevin) Chan",
-    "label": "Undergraduate Student",
+    "label": "MSCS Student at Stanford",
     "image": "",
     "email": "tsekaichan@gmail.com",
     "url": "https://tsekaichan.com"
   },
   "education": [
     {
+      "institution": "Stanford University",
+      "location": "Stanford, CA",
+      "url": "https://stanford.edu",
+      "area": "M.S. Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2025-09-22",
+      "endDate": "",
+      "score": "",
+      "courses": [
+        "Specialized in Artificial Intelligence"
+      ]
+    },
+    {
       "institution": "University of California, San Diego",
       "location": "La Jolla, CA",
       "url": "https://ucsd.edu",
-      "area": "B.S. Computer Science | Regents Scholar | GPA: 3.99/4.0",
+      "area": "B.S. Computer Science | Regents Scholar | Summa Cum Laude",
       "studyType": "Bachelor of Science",
       "startDate": "2022-09-19",
-      "endDate": "",
-      "score": "3.993",
+      "endDate": "2025-06-15",
+      "score": "3.986",
       "courses": [
-        "CS: Data Structures, Algorithms,  Software Engineering, Database, Operating System, Computer Security",
-        "3D/CG: Computer Graphics, 3D User Interaction, 3D Asset Design",
-        "AI: Statistical Methods, Machine Learning, Deep Learning, Computer Vision I/II, ML for Music/Audio, Deep Learning for 3D Data (Graduate), ML for Robotics (Graduate)"
+        "<b>[Selected Courses]</b> CS: Data Structures, Algorithms, Software Engineering, Database, Operating System, Computer Security, Network Services; 3D/CG: Computer Graphics, 3D User Interaction, 3D Asset Design; AI: Statistical Methods, Probabilistic Models, Machine Learning, Deep Learning, Computer Vision I/II, ML for Music/Audio, ML with Few Labels, Deep Learning for 3D Data (Graduate), ML for Robotics (Graduate)",
+        "<b>[Activities]</b> Director of Events at ACM AI, ICPC Team, Scholars Society, Intern at SU Lab, Intern at Qualcomm Institute"
       ]
     }
   ],
   "publications": [
     {
-      "name": "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI",
-      "publisher": "Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin Liu, <b>Tse-kai Chan</b>, Yuan Gao, Xuanlin Li, Tongzhou Mu, Nan Xiao, Arnav Gurha, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, Hao Su",
-      "releaseDate": "2024",
+      "name": "Demonstrating GPU Parallelized Robot Simulation and Rendering for Generalizable Embodied AI with ManiSkill3",
+      "publisher": "Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin Liu, <b>Tse-Kai Chan</b>, Yuan Gao, Xuanlin Li, Tongzhou Mu, Nan Xiao, Arnav Gurha, Viswesh N., Yong Woo Choi, Yen-Ru Chen, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, Hao Su",
+      "releaseDate": "2025",
       "url": "https://arxiv.org/abs/2410.00425",
-      "summary": "arXiv preprint arXiv:2410.00425, 2024"
+      "summary": "Robot Learning Workshop at ICLR 2025 (Oral). Robotics: Science and Systems (RSS) 2025"
     },
     {
       "name": "RFCL: Reverse Forward Curriculum Learning for Extreme Sample and Demonstration Efficiency in RL",
@@ -48,8 +60,8 @@
       "endDate": "",
       "summary": "Python, PyTorch, Unreal Engine, Kubernetes, Docker, C++",
       "highlights": [
-        "Co-developed interactive 3D avatars of historical figures in Unreal Engine 5, driven by large language models and text-to-speech/animation pipeline. Implemented a multi-speaker tracking module to drive a virtual avatar's attention and face/body motion in multiplayer VR or through webcam using Google Mediapipe.",
-        "Developed a real-time audio-to-face pipeline that receives audio input from text-to-speech and uses NVIDIA Audio2Face through Rest API to animate facial movements on a 3D avatar. Further researched and developed a multi-context co-speech gesture generation model for virtual avatar animation.",
+        "Co-developing interactive 3D avatars of historical figures, driven by large language models, text-to-speech / animation pipeline, and Unreal Engine 5. Co-developing Climate Games, an educational video game, to raise awareness on climate change and archaeology. Both projects were presented at ASOR 2024 Annual Meeting.",
+        "Developed a real-time audio-to-face pipeline that receives audio input from text-to-speech and uses NVIDIA Audio2Face through Rest API to animate facial movements on a 3D avatar. Further researched and developed our own multimodal co-speech gesture generation model for holistic body animation.",
         "Developed an Unreal plugin for real-time speech gesture generation and player communication. The plugin supports seamless communication in multiplayer gameplay and between Unreal Engine and external AI models."
       ]
     },
@@ -61,10 +73,11 @@
       "endDate": "",
       "summary": "Python, PyTorch, JAX, Gymnasium, Docker, Kubernetes",
       "highlights": [
-        "Researched demo-guided deep reinforcement learning methods to effectively solve long-horizon, sparse tasks.",
+        "Researched demo-guided deep reinforcement learning methods to effectively solve long-horizon, sparse tasks. Co-authored paper <i>Reverse Forward Curriculum Learning</i> accepted in ICLR 2024.",
         "Benchmarked various state-of-the-art demonstration-guided deep RL methods, including RLPD, IQL, etc., on ManiSkill2, D4RL, and Meta-World tasks. Performed experiments on Kubernetes cluster using Docker.",
         "Adapted TD-MPC2 to Maniskill3 CPU/GPU vectorized environments and visual (rgb) based RL.",
-        "Researching ways to accelerate RL algorithms for better wall-time and sample efficiency in visual-based robotics environments."
+        "Developed and optimized implementations of TD-MPC2 and SAC in JAX, achieving a 5x reduction in training time in comparison to previous PyTorch implementations.",
+        "Proposed a RL method leveraging layer-wise freezing and a latent state replay buffer to enhance both sample and wall-time efficiency and wall-time in visual and continual learning tasks. Preliminary results show a 2x reduction in training time on ManiSkill3."
       ]
     },
     {
@@ -81,6 +94,15 @@
     }
   ],
   "teaching": [
+    {
+      "name": "UCSD Department of Computer Science and Engineering (CSE)",
+      "position": "Instructional Assistant",
+      "url": "https://cse.ucsd.edu",
+      "startDate": "2025-01",
+      "endDate": "2025-03",
+      "highlights": [
+      ]
+    },
     {
       "name": "UCSD Department of Computer Science and Engineering (CSE)",
       "position": "Instructional Assistant",
@@ -112,7 +134,7 @@
     {
       "name": "Programming Languages",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["Java", "Python", "C", "C++", "C#", "JavaScript", "HTML", "CSS", "SQL", "LaTeX", "Shell"]
+      "keywords": ["Java", "Python", "C", "C++", "C#", "Go", "HTML", "CSS", "SQL", "LaTeX", "Shell"]
     },
     {
       "name": "Developer Tools",
@@ -134,16 +156,6 @@
     {
       "language": "Mandarin Chinese",
       "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Intermediate",
-      "icon": ""
-    },
-    {
-      "language": "Japanese",
-      "fluency": "Beginner",
       "icon": ""
     }
   ],

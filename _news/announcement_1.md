@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Beginning of my undergraduate journey at UC San Diego majoring in Computer Science
+Started my undergraduate journey at UC San Diego majoring in Computer Science
