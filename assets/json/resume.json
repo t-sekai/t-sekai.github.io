@@ -16,9 +16,7 @@
       "startDate": "2025-09-22",
       "endDate": "",
       "score": "",
-      "courses": [
-        "Specialized in Artificial Intelligence"
-      ]
+      "courses": ["Specialized in Artificial Intelligence"]
     },
     {
       "institution": "University of California, San Diego",
@@ -100,8 +98,7 @@
       "url": "https://cse.ucsd.edu",
       "startDate": "2025-01",
       "endDate": "2025-03",
-      "highlights": [
-      ]
+      "highlights": []
     },
     {
       "name": "UCSD Department of Computer Science and Engineering (CSE)",
