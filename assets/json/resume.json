@@ -1,22 +1,15 @@
 {
-  "basics": {
-    "name": "Tse-Kai (Kevin) Chan",
-    "label": "MSCS Student at Stanford",
-    "image": "",
-    "email": "tsekaichan@gmail.com",
-    "url": "https://tsekaichan.com"
-  },
   "education": [
     {
       "institution": "Stanford University",
       "location": "Stanford, CA",
       "url": "https://stanford.edu",
-      "area": "M.S. Computer Science",
+      "area": "M.S. Computer Science | Specialized in Artificial Intelligence",
       "studyType": "Master of Science",
       "startDate": "2025-09-22",
       "endDate": "",
-      "score": "",
-      "courses": ["Specialized in Artificial Intelligence"]
+      "score": ""
+      // "courses": ["Specialized in Artificial Intelligence"]
     },
     {
       "institution": "University of California, San Diego",
@@ -26,36 +19,65 @@
       "studyType": "Bachelor of Science",
       "startDate": "2022-09-19",
       "endDate": "2025-06-15",
-      "score": "3.986",
-      "courses": [
-        "<b>[Selected Courses]</b> CS: Data Structures, Algorithms, Software Engineering, Database, Operating System, Computer Security, Network Services; 3D/CG: Computer Graphics, 3D User Interaction, 3D Asset Design; AI: Statistical Methods, Probabilistic Models, Machine Learning, Deep Learning, Computer Vision I/II, ML for Music/Audio, ML with Few Labels, Deep Learning for 3D Data (Graduate), ML for Robotics (Graduate)",
-        "<b>[Activities]</b> Director of Events at ACM AI, ICPC Team, Scholars Society, Intern at SU Lab, Intern at Qualcomm Institute"
-      ]
+      "score": "3.986"
+      // "courses": [
+      //   "<b>[Selected Courses]</b> CS: Data Structures, Algorithms, Software Engineering, Database, Operating System, Computer Security, Network Services; 3D/CG: Computer Graphics, 3D User Interaction, 3D Asset Design; AI: Statistical Methods, Probabilistic Models, Machine Learning, Deep Learning, Computer Vision I/II, ML for Music/Audio, ML with Few Labels, Deep Learning for 3D Data (Graduate), ML for Robotics (Graduate)",
+      //   "<b>[Activities]</b> Director of Events at ACM AI, ICPC Team, Scholars Society, Intern at SU Lab, Intern at Qualcomm Institute"
+      // ]
     }
   ],
-  "publications": [
-    {
-      "name": "Demonstrating GPU Parallelized Robot Simulation and Rendering for Generalizable Embodied AI with ManiSkill3",
-      "publisher": "Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin Liu, <b>Tse-Kai Chan</b>, Yuan Gao, Xuanlin Li, Tongzhou Mu, Nan Xiao, Arnav Gurha, Viswesh N., Yong Woo Choi, Yen-Ru Chen, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, Hao Su",
-      "releaseDate": "2025",
-      "url": "https://arxiv.org/abs/2410.00425",
-      "summary": "Robot Learning Workshop at ICLR 2025 (Oral). Robotics: Science and Systems (RSS) 2025"
-    },
-    {
-      "name": "RFCL: Reverse Forward Curriculum Learning for Extreme Sample and Demonstration Efficiency in RL",
-      "publisher": "Stone Tao, Arth Shukla, <b>Tse-kai Chan</b>, Hao Su",
-      "releaseDate": "2024",
-      "url": "https://arxiv.org/abs/2405.03379",
-      "summary": "International Conference on Learning Representations (ICLR) 2024"
-    }
-  ],
+  // "publications": [
+  //   {
+  //     "name": "Demonstrating GPU Parallelized Robot Simulation and Rendering for Generalizable Embodied AI with ManiSkill3",
+  //     "publisher": "Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin Liu, <b>Tse-Kai Chan</b>, Yuan Gao, Xuanlin Li, Tongzhou Mu, Nan Xiao, Arnav Gurha, Viswesh N., Yong Woo Choi, Yen-Ru Chen, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, Hao Su",
+  //     "releaseDate": "2025",
+  //     "url": "https://arxiv.org/abs/2410.00425",
+  //     "summary": "Robot Learning Workshop at ICLR 2025 (Oral). Robotics: Science and Systems (RSS) 2025"
+  //   },
+  //   {
+  //     "name": "RFCL: Reverse Forward Curriculum Learning for Extreme Sample and Demonstration Efficiency in RL",
+  //     "publisher": "Stone Tao, Arth Shukla, <b>Tse-kai Chan</b>, Hao Su",
+  //     "releaseDate": "2024",
+  //     "url": "https://arxiv.org/abs/2405.03379",
+  //     "summary": "International Conference on Learning Representations (ICLR) 2024"
+  //   }
+  // ],
   "work": [
     {
-      "name": "Qualcomm Institute (Calit2)",
-      "position": "Research and Development Intern",
+      "category": "industry",
+      "name": "Gridmatic",
+      "position": "Machine Learning Intern",
+      "url": "https://www.gridmatic.com",
+      "startDate": "2026-09",
+      "endDate": "2026-12",
+      "highlights": ["Incoming Fall 2026 - ML Models for Grid Forecasting"]
+    },
+    {
+      "category": "industry",
+      "name": "Meta",
+      "position": "Software Engineer Intern",
+      "url": "https://meta.com",
+      "startDate": "2026-06",
+      "endDate": "2026-09",
+      "highlights": ["Incoming Summer 2026 - Instagram Recommendation"]
+    },
+    {
+      "category": "research",
+      "name": "Stanford Vision and Learning Lab | Advisor: Prof. Jiajun Wu",
+      "position": "Graduate Researcher",
+      "url": "https://svl.stanford.edu",
+      "startDate": "2025-09",
+      "endDate": "",
+      "summary": "Python, PyTorch, Swift",
+      "highlights": ["Researching cost-effective multi-view capturing systems for high-fidelity 3D / 4D reconstruction."]
+    },
+    {
+      "category": "industry",
+      "name": "Qualcomm Institute",
+      "position": "Machine Learning Engineer Intern",
       "url": "https://qi.ucsd.edu",
       "startDate": "2023-04",
-      "endDate": "",
+      "endDate": "2025-06",
       "summary": "Python, PyTorch, Unreal Engine, Kubernetes, Docker, C++",
       "highlights": [
         "Co-developing interactive 3D avatars of historical figures, driven by large language models, text-to-speech / animation pipeline, and Unreal Engine 5. Co-developing Climate Games, an educational video game, to raise awareness on climate change and archaeology. Both projects were presented at ASOR 2024 Annual Meeting.",
@@ -64,21 +86,23 @@
       ]
     },
     {
-      "name": "Advisor: Prof. Hao Su",
-      "position": "AI Research Intern",
+      "category": "research",
+      "name": "Hao Su Lab | Advisor: Prof. Hao Su",
+      "position": "Undergraduate Researcher",
       "url": "https://cseweb.ucsd.edu/~haosu/",
       "startDate": "2023-06",
-      "endDate": "",
+      "endDate": "2025-06",
       "summary": "Python, PyTorch, JAX, Gymnasium, Docker, Kubernetes",
       "highlights": [
-        "Researched demo-guided deep reinforcement learning methods to effectively solve long-horizon, sparse tasks. Co-authored paper <i>Reverse Forward Curriculum Learning</i> accepted in ICLR 2024.",
+        "Researched demo-guided deep reinforcement learning methods to effectively solve long-horizon, sparse tasks. Co-authored paper Reverse Forward Curriculum Learning accepted in ICLR 2024.",
         "Benchmarked various state-of-the-art demonstration-guided deep RL methods, including RLPD, IQL, etc., on ManiSkill2, D4RL, and Meta-World tasks. Performed experiments on Kubernetes cluster using Docker.",
         "Adapted TD-MPC2 to Maniskill3 CPU/GPU vectorized environments and visual (rgb) based RL.",
         "Developed and optimized implementations of TD-MPC2 and SAC in JAX, achieving a 5x reduction in training time in comparison to previous PyTorch implementations.",
-        "Proposed a RL method leveraging layer-wise freezing and a latent state replay buffer to enhance both sample and wall-time efficiency and wall-time in visual and continual learning tasks. Preliminary results show a 2x reduction in training time on ManiSkill3."
+        "Proposed a RL method leveraging layer-wise freezing and a latent state replay buffer to enhance both sample and wall-time efficiency and wall-time in visual and continual learning tasks. Results demonstrated a 2x reduction in training time on ManiSkill3."
       ]
     },
     {
+      "category": "industry",
       "name": "Nearal",
       "position": "Software Engineer Intern",
       "url": "https://www.nearal.com",
@@ -89,28 +113,29 @@
         "Developed various features for Nearal’s Android application, including a dynamic onboarding screen, a floating login interface, and an improved sign-up process, using Kotlin and Android Studio.",
         "Refined multiple app fragments, ensuring optimal functionality for both logged-in and logged-out users, and resolved critical issues such as photo display inconsistencies and profile identification."
       ]
-    }
-  ],
-  "teaching": [
-    {
-      "name": "UCSD Department of Computer Science and Engineering (CSE)",
-      "position": "Instructional Assistant",
-      "url": "https://cse.ucsd.edu",
-      "startDate": "2025-01",
-      "endDate": "2025-03",
-      "highlights": []
     },
     {
+      "category": "teaching",
       "name": "UCSD Department of Computer Science and Engineering (CSE)",
       "position": "Instructional Assistant",
       "url": "https://cse.ucsd.edu",
       "startDate": "2024-01",
-      "endDate": "2024-03",
-      "highlights": [
-        "CSE 152A: Taught Computer Vision and Deep Learning concepts for a class of 150+ students and assisted 20+ students weekly with programming assignments in office hours."
-      ]
+      "endDate": "2025-03",
+      "highlights": ["Assisted in the instruction of CSE 152A: Intro to Computer Vision during Winter quarters of 2024 and 2025."]
     }
   ],
+  // "teaching": [
+  //   {
+  //     "name": "UCSD Department of Computer Science and Engineering (CSE)",
+  //     "position": "Instructional Assistant",
+  //     "url": "https://cse.ucsd.edu",
+  //     "startDate": "2024-01",
+  //     "endDate": "2025-03",
+  //     "highlights": [
+  //       "Assisted in the instruction of CSE 152A: Intro to Computer Vision during Winter quarters of 2024 and 2025."
+  //     ]
+  //   }
+  // ],
   "awards": [
     {
       "title": "Regents Scholarship",
@@ -131,54 +156,59 @@
     {
       "name": "Programming Languages",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["Java", "Python", "C", "C++", "C#", "Go", "HTML", "CSS", "SQL", "LaTeX", "Shell"]
+      "keywords": ["Java", "Python", "C/C++", "CUDA", "SQL", "LaTeX", "Shell"]
     },
     {
       "name": "Developer Tools",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["Git", "Docker", "Kubernetes", "ZBrush", "Unity", "Unreal Engine 5", "Blender"]
+      "keywords": ["Git", "Docker", "Kubernetes", "Unreal Engine 5"]
     },
     {
       "name": "Library",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["PyTorch", "Numpy", "OpenCV", "Gymnasium", "OpenGL", "LMDB"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker",
-      "icon": ""
+      "keywords": ["PyTorch", "Numpy", "JAX"]
     },
     {
-      "language": "Mandarin Chinese",
-      "fluency": "Native speaker",
-      "icon": ""
+      "name": "Domain Knowledge",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Reinforcement Learning", "Computer Vision", "Machine Learning", "Computer Graphics"]
     }
   ],
-  "interests": [
-    {
-      "name": "Computer Science",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Competitive Programming",
-        "Artificial Intelligence",
-        "Computer Vision",
-        "Generative AI",
-        "Reinforcement Learning",
-        "Game AI",
-        "Robotics",
-        "3D Computer Graphics",
-        "Computer Animation",
-        "Extended Reality (XR)",
-        "Health Informatics"
-      ]
-    },
-    {
-      "name": "Others",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Tetris", "Table Tennis", "Movie", "Anime", "Food"]
-    }
-  ],
+  // "languages": [
+  //   {
+  //     "language": "English",
+  //     "fluency": "Native speaker",
+  //     "icon": ""
+  //   },
+  //   {
+  //     "language": "Mandarin Chinese",
+  //     "fluency": "Native speaker",
+  //     "icon": ""
+  //   }
+  // ],
+  // "interests": [
+  //   {
+  //     "name": "Computer Science",
+  //     "icon": "fa-solid fa-tag",
+  //     "keywords": [
+  //       "Competitive Programming",
+  //       "Artificial Intelligence",
+  //       "Computer Vision",
+  //       "Generative AI",
+  //       "Reinforcement Learning",
+  //       "Game AI",
+  //       "Robotics",
+  //       "3D Computer Graphics",
+  //       "Computer Animation",
+  //       "Extended Reality (XR)",
+  //       "Health Informatics"
+  //     ]
+  //   },
+  //   {
+  //     "name": "Others",
+  //     "icon": "fa-solid fa-tag",
+  //     "keywords": ["Tetris", "Table Tennis", "Movie", "Anime", "Food"]
+  //   }
+  // ],
   "projects": []
 }

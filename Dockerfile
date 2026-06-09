@@ -1,7 +1,7 @@
-FROM ruby:latest
+FROM ruby:3.3
 ENV DEBIAN_FRONTEND noninteractive
 
-Label MAINTAINER Amir Pourmand
+LABEL MAINTAINER="Amir Pourmand"
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends \
     locales \
@@ -29,8 +29,8 @@ ADD Gemfile /srv/jekyll
 
 WORKDIR /srv/jekyll
 
-# install jekyll and dependencies
-RUN gem install jekyll bundler
+# install bundler matching Gemfile.lock
+RUN gem install bundler -v 2.5.14
 
 RUN bundle install --no-cache
 # && rm -rf /var/lib/gems/3.1.0/cache

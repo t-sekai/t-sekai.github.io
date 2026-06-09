@@ -1,11 +1,11 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: experience
 nav: true
 nav_order: 5
-cv_pdf: cv_2025.pdf
-description: On this page, you will find a thorough overview of my academic journey, professional experiences, and key skills. scroll down for detailed insights into my educational background, projects, and achievements.
+cv_pdf: cv_2026.pdf
+description:
 toc:
   sidebar: left
 ---
