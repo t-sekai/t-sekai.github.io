@@ -1,76 +1,123 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+{% capture about_name %}
+  {% if site.title == 'blank' %}
+    {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+{% endcapture %}
 
+<div class="post">
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+    <section class="about-hero">
+      <div class="about-hero__profile">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% assign profile_image_class = 'about-hero__portrait img-fluid rounded' %}
+          {% capture sizes %}(min-width: 768px) 260px, 70vw{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+
+        <h1 class="about-hero__name">{{ about_name | strip }}</h1>
+        {% if page.subtitle %}
+          <p class="about-hero__subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        {% if page.intro_social %}
+          <div class="about-hero__social contact-icons">
+            {% if page.email %}
+              <a href="mailto:{{ page.email | encode_email }}" title="email" aria-label="email">
+                <i class="fa-solid fa-at"></i>
+              </a>
+            {% endif %}
+            {% if page.social %}
+              {% include social.liquid %}
+            {% endif %}
+            {% if page.cv_pdf %}
+              <a
+                href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="CV"
+                aria-label="Download CV"
+              >
+                <i class="fa-solid fa-download"></i>
+              </a>
+            {% endif %}
+          </div>
         {% endif %}
       </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <div class="about-hero__main">
+        <h3>About Me</h3>
+        <div class="about-hero__bio">{{ content }}</div>
+
+        {% if page.interests or page.education %}
+          <div class="about-hero__details">
+            {% if page.interests %}
+              <section>
+                <h4>interests</h4>
+                <ul class="about-hero__interests">
+                  {% for interest in page.interests %}
+                    <li>{{ interest }}</li>
+                  {% endfor %}
+                </ul>
+              </section>
+            {% endif %}
+
+            {% if page.education %}
+              <section>
+                <h4>education</h4>
+                <ul class="about-hero__education">
+                  {% for item in page.education %}
+                    <li>
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      <span>
+                        <strong>{{ item.degree }}</strong>
+                        <small>{{ item.school }}</small>
+                      </span>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </section>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </section>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="about-section">
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="about-section">
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications & preprints</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
+      <section class="about-section">
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
     {% if site.newsletter.enabled and site.footer_fixed %}
